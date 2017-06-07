@@ -96,8 +96,8 @@ function movgf_unset_genesis_page_templates( $page_templates ) {
 }
 
 //* Example: Remove the Blog Page theme settings meta box
-add_action( 'genesis_theme_settings_metaboxes', 'moh_remove_metaboxes' );
-function moh_remove_metaboxes( $_genesis_theme_settings_pagehook ) {
+add_action( 'genesis_theme_settings_metaboxes', 'movgf_remove_metaboxes' );
+function movgf_remove_metaboxes( $_genesis_theme_settings_pagehook ) {
     remove_meta_box( 'genesis-theme-settings-blogpage', $_genesis_theme_settings_pagehook, 'main' );
 }
 ?>
