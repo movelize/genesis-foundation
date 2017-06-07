@@ -1,0 +1,1 @@
+Put your translation .po and .mo files into this folder
